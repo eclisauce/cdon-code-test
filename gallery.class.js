@@ -2,7 +2,7 @@ class Gallery {
     constructor(app) {
         this.app = app;
         this.offset = 0;
-        this.loadAmount = 10;
+        this.loadAmount = 20;
         this.start();
     }
 
@@ -38,7 +38,7 @@ class Gallery {
 
     reloadImgs() {
         this.app.allImgs = [];
-        this.offset = Math.floor(Math.random() * 3000);
+        this.offset = Math.floor(Math.random() * 10);
         this.loadGifs();
     }
 
